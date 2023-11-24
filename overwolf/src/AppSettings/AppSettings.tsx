@@ -184,9 +184,7 @@ const settingsPageMap = {
 function* getSettingsPages(): Generator<keyof typeof settingsPageMap, void, void> {
     yield 'window';
     yield 'overlay';
-    if (canDrawMarkers) {
-        yield 'icon';
-    }
+    yield 'icon';
     if (canDrawFriends) {
         yield 'friendChannels';
     }
